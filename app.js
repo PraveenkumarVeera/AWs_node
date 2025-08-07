@@ -106,7 +106,7 @@ app.delete('/users/:id', async (req, res) => {
 
 app.get("/", (req, res) => res.send("Server is running"));
 // Start server
-app.listen(4000, () => {
+app.listen(4000,'0.0.0.0', () => {
   console.log('Server running on http://localhost:4000');
 });
  
